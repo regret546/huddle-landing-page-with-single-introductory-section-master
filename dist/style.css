@@ -65,4 +65,29 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+:root {
+  /* Font Family */
+  --ff--primary: "Open Sans", sans-serif;
+  --fw--secondary: "Poppins", sans-serif;
+  /* Font Weight */
+  --fw--bold: 400;
+  --fw--very-bold: 600;
+}
+
+:root {
+  /* Primary Colors */
+  --clr--violet: hsl(257, 40%, 49%);
+  --clr--soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+  font-family: var(--ff--primary);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }/*# sourceMappingURL=style.css.map */
