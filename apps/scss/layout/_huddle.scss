@@ -1,0 +1,23 @@
+.huddle {
+  display: grid;
+  gap: 4rem;
+
+  &__header_logo {
+    img {
+      height: 75px;
+      width: 150px;
+    }
+  }
+  &__content {
+    display: grid;
+    gap: 3rem;
+
+    &_interface {
+    }
+
+    &_info {
+      display: grid;
+      gap: 1rem;
+    }
+  }
+}
