@@ -1,6 +1,7 @@
 .container {
   min-height: 100vh;
   display: grid;
+  gap: 2rem;
   place-items: center;
   text-align: center;
   margin-inline: 2rem;
@@ -45,6 +46,32 @@ body {
 .huddle__content_info .btn-register:hover {
   color: var(--clr--white);
   background-color: var(--clr--soft-magenta);
+}
+
+.footer__social-media ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer__social-media ul i {
+  font-size: 18px;
+  color: var(--clr--white);
+  position: relative;
+}
+.footer__social-media ul i:after {
+  position: absolute;
+  content: "";
+  height: 35px;
+  width: 35px;
+  border-radius: 35px;
+  border: 1px solid var(--clr--white);
+  top: -9px;
+  left: -9px;
+}
+.footer__social-media ul a:nth-of-type(2) {
+  margin-left: 0.35rem;
 }
 
 /*
