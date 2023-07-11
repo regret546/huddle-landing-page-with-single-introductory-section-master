@@ -9,6 +9,7 @@
 
 body {
   background: url("/images/bg-mobile.svg") no-repeat;
+  background-position: top;
   background-size: contain;
   background-color: var(--clr--violet);
   font-family: var(--ff--primary);
@@ -26,6 +27,10 @@ body {
 .huddle__content {
   display: grid;
   gap: 3rem;
+}
+.huddle__content_interface {
+  display: grid;
+  place-items: center;
 }
 .huddle__content_info {
   display: grid;
@@ -48,6 +53,34 @@ body {
   background-color: var(--clr--soft-magenta);
 }
 
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 900px) {
+  .huddle {
+    width: 1440px;
+  }
+  .huddle__content {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-rows: auto 1fr;
+  }
+  .huddle__content_interface {
+    min-width: 400px;
+    display: grid;
+    place-items: center;
+  }
+  .huddle__content_info {
+    margin-top: 3rem;
+    max-width: 500px;
+    display: grid;
+    height: 200px;
+    text-align: left;
+  }
+  .huddle__content_info .btn-register {
+    margin: 0;
+    margin-right: auto;
+  }
+}
 .footer__social-media ul {
   display: grid;
   grid-auto-flow: column;

@@ -13,6 +13,8 @@
     gap: 3rem;
 
     &_interface {
+      display: grid;
+      place-items: center;
     }
 
     &_info {
@@ -37,6 +39,38 @@
       .btn-register:hover {
         color: var(--clr--white);
         background-color: var(--clr--soft-magenta);
+      }
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 900px) {
+  .huddle {
+    width: 1440px;
+    &__content {
+      display: grid;
+      gap: 1rem;
+      grid-auto-flow: column;
+      grid-auto-rows: auto 1fr;
+
+      &_interface {
+        min-width: 400px;
+        display: grid;
+        place-items: center;
+      }
+
+      &_info {
+        margin-top: 3rem;
+        max-width: 500px;
+        display: grid;
+        height: 200px;
+        text-align: left;
+
+        .btn-register {
+          margin: 0;
+          margin-right: auto;
+        }
       }
     }
   }
