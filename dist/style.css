@@ -16,6 +16,16 @@ body {
   color: var(--clr--white);
 }
 
+@media only screen and (min-width: 900px) {
+  body {
+    background: url("/images/bg-desktop.svg") no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: var(--clr--violet);
+    font-family: var(--ff--primary);
+    color: var(--clr--white);
+  }
+}
 .huddle {
   display: grid;
   gap: 4rem;
@@ -56,25 +66,31 @@ body {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 900px) {
   .huddle {
-    width: 1440px;
+    max-width: 1440px;
+    padding: 2rem 0;
+  }
+  .huddle__header_logo img {
+    height: 100px;
+    width: 200px;
   }
   .huddle__content {
     display: grid;
     gap: 1rem;
     grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto 1fr;
   }
   .huddle__content_interface {
-    min-width: 400px;
-    display: grid;
-    place-items: center;
+    grid-column: 1/3;
+  }
+  .huddle__content_interface img {
+    width: 100%;
   }
   .huddle__content_info {
-    margin-top: 3rem;
-    max-width: 500px;
-    display: grid;
-    height: 200px;
     text-align: left;
+    margin-top: 4rem;
+    height: 240px;
+    grid-column: 3/4;
   }
   .huddle__content_info .btn-register {
     margin: 0;
