@@ -11,7 +11,7 @@ body {
   body {
     background: url("/images/bg-desktop.svg") no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: 100% 100%;
     background-color: var(--clr--violet);
     font-family: var(--ff--primary);
     color: var(--clr--white);

@@ -49,6 +49,7 @@
   .huddle {
     max-width: 1440px;
     padding: 2rem 0;
+    padding-bottom: 0;
 
     &__header_logo {
       img {
@@ -77,6 +78,11 @@
         margin-top: 4rem;
         height: 240px;
         grid-column: 3/4;
+
+        h1 {
+          font-size: 2rem;
+        }
+
         .btn-register {
           margin: 0;
           margin-right: auto;

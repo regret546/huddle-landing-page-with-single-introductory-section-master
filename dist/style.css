@@ -20,7 +20,7 @@ body {
   body {
     background: url("/images/bg-desktop.svg") no-repeat;
     background-position: top;
-    background-size: contain;
+    background-size: 100% 100%;
     background-color: var(--clr--violet);
     font-family: var(--ff--primary);
     color: var(--clr--white);
@@ -68,6 +68,7 @@ body {
   .huddle {
     max-width: 1440px;
     padding: 2rem 0;
+    padding-bottom: 0;
   }
   .huddle__header_logo img {
     height: 100px;
@@ -92,10 +93,18 @@ body {
     height: 240px;
     grid-column: 3/4;
   }
+  .huddle__content_info h1 {
+    font-size: 2rem;
+  }
   .huddle__content_info .btn-register {
     margin: 0;
     margin-right: auto;
   }
+}
+.footer {
+  display: grid;
+  margin-inline: auto;
+  width: 100px;
 }
 .footer__social-media ul {
   display: grid;
@@ -136,6 +145,12 @@ body {
   margin-left: 0.35rem;
 }
 
+@media only screen and (min-width: 900px) {
+  .footer {
+    margin: 2rem;
+    margin-left: auto;
+  }
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
