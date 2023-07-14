@@ -1,7 +1,9 @@
 .footer {
   display: grid;
+  display: block;
   margin-inline: auto;
   width: 100px;
+
   &__social-media {
     ul {
       display: grid;
@@ -49,8 +51,9 @@
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 975px) {
   .footer {
+    margin-top: 2rem;
     margin: 2rem;
     margin-left: auto;
   }

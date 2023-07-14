@@ -45,10 +45,10 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 975px) {
   .huddle {
     max-width: 1440px;
-    padding: 2rem 0;
+    padding: 2rem;
     padding-bottom: 0;
 
     &__header_logo {

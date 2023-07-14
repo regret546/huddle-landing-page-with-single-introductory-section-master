@@ -16,7 +16,7 @@ body {
   color: var(--clr--white);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 975px) {
   body {
     background: url("/images/bg-desktop.svg") no-repeat;
     background-position: top;
@@ -64,10 +64,10 @@ body {
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 975px) {
   .huddle {
     max-width: 1440px;
-    padding: 2rem 0;
+    padding: 2rem;
     padding-bottom: 0;
   }
   .huddle__header_logo img {
@@ -103,6 +103,7 @@ body {
 }
 .footer {
   display: grid;
+  display: block;
   margin-inline: auto;
   width: 100px;
 }
@@ -145,8 +146,9 @@ body {
   margin-left: 0.35rem;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 975px) {
   .footer {
+    margin-top: 2rem;
     margin: 2rem;
     margin-left: auto;
   }
