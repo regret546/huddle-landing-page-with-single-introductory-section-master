@@ -47,8 +47,8 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 975px) {
   .huddle {
-    max-width: 1440px;
-    padding: 2rem;
+    max-width: 1400px;
+    margin: 2rem;
     padding-bottom: 0;
 
     &__header_logo {
@@ -69,7 +69,8 @@
         grid-column: 1/3;
 
         img {
-          width: 100%;
+          height: 550px;
+          width: 90%;
         }
       }
 
