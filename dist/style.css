@@ -86,7 +86,7 @@ body {
   }
   .huddle__content_interface img {
     height: 550px;
-    width: 90%;
+    width: 100%;
   }
   .huddle__content_info {
     text-align: left;
